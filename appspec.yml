@@ -3,5 +3,5 @@ Resources:
   - myLambdaFunction:
       Type: AWS::Lambda::Function
       Properties:
-        Name: my-lambda-function-name  # Ensure this matches your AWS Lambda function name
-        Alias: my-lambda-alias  # Alias name (optional, remove if not using aliases)
+        Name: my-lambda-function-name  # Replace with your Lambda function name
+        Alias: my-lambda-alias  # Replace with an actual alias
