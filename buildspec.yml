@@ -1,0 +1,14 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14  # Example runtime
+  build:
+    commands:
+      - npm install
+      - npm run build
+artifacts:
+  files:
+    - '**/*'
+  base-directory: dist/
+  discard-paths: no
