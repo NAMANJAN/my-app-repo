@@ -1,14 +1,7 @@
 version: 0.0
-os: linux
-files:
-  - source: /
-    destination: /var/www/html
-hooks:
-  BeforeInstall:
-    - location: scripts/before_install.sh
-      timeout: 300
-      runas: root
-  AfterInstall:
-    - location: scripts/after_install.sh
-      timeout: 300
-      runas: root
+Resources:
+  - myLambdaFunction:
+      Type: AWS::Lambda::Function
+      Properties:
+        Name: my-lambda-function-name  # Ensure this matches your AWS Lambda function name
+        Alias: my-lambda-alias  # Alias name (optional, remove if not using aliases)
